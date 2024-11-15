@@ -4,6 +4,7 @@ import { homeTabData } from "../../jsonFormatData/home";
 import { homeCardData } from "../../jsonFormatData/home";
 import Footer from "./Footer";
 
+
 const Home = () => {
   // Initialize state for the current tab index (using the tab index instead of the title)
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
@@ -32,6 +33,7 @@ const Home = () => {
           alt="Technology Banner"
           className="home-banner-image"
         />
+
         <div className="home-text">
           <h1>Manage your business strategy in one placeholder</h1>
           <p>
@@ -80,12 +82,15 @@ const Home = () => {
 
       {/* Card data container */}
       <div className="home-card-container">
-        {homeCardData.map((item, id) => (
-          <div className="home-card-data" key={id}>
-            <h6>{item.title}</h6>
-            <p>{item.description}</p>
-          </div>
-        ))}
+        {homeCardData.map((item, id) => {
+          return (
+            <div className="home-card-data" key={id}>
+              <img src={item.image} alt="logo" />
+              <h6>{item.title}</h6>
+              <p>{item.description}</p>
+            </div>
+          );
+        })}
       </div>
 
       <Footer />

@@ -45,6 +45,13 @@
   line-height: 1.6;
 }
 
+
+.parabullet {
+  display: flex;
+  align-items: center;
+
+}
+
 .enquiry-form {
   width: 100%;
   padding: 20px;

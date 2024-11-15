@@ -91,11 +91,17 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 20px;
   flex: 1 1 150px;
   background-color: #f5f9ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+
+.home-card-data img {
+  position: relative;
+  bottom: 65px;
 }
 
 .home-card-data h6 {

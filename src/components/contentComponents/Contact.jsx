@@ -29,11 +29,26 @@ const Contact = () => {
               work, but in life too. We help spare your time to focus on the
               bigger picture by taking care of the little details.
             </p>
-            <p> <HiChevronDoubleRight />Staff works from our offices in USA</p>
-            <p> <HiChevronDoubleRight />Scale up/ down on demand</p>
+            <div >
+              <p className="parabullet">
+                {" "}
+                <HiChevronDoubleRight />Staff works from our offices in USA
+              </p>
+              <p className="parabullet">
+                {" "}
+                <HiChevronDoubleRight />
+                Scale up/ down on demand
+              </p>
 
-            <p> <HiChevronDoubleRight /> One time or on going projects</p>
-            <p> <HiChevronDoubleRight /> Hire based on skill set</p>
+              <p className="parabullet">
+                {" "}
+                <HiChevronDoubleRight /> One time or on going projects
+              </p>
+              <p className="parabullet">
+                {" "}
+                <HiChevronDoubleRight /> Hire based on skill set
+              </p>
+            </div>
           </div>
           <div className="enquiry-form">
             <h3>Let's Get Connected</h3>
@@ -49,10 +64,19 @@ const Contact = () => {
         </div>
         <div className="contact-deatils">
           <h1> Contact us by Phone Number or Email Address</h1>
-          <h1><a href="tel:+918247898008" target="_blank">+91 82478 98008</a></h1>
+          <h1>
+            <a href="tel:+918247898008" >
+              +91 82478 98008
+            </a>
+          </h1>
           <h1>OR</h1>
 
-          <h1>  <a href="mailto:support@inapayments.com" target="_blank">support@inapayments.com</a></h1>
+          <h1>
+            {" "}
+            <a href="mailto:support@inapayments.com">
+              support@inapayments.com
+            </a>
+          </h1>
         </div>
       </div>
 
