@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../stylesheets/home.css";
-import { homeTabData } from "../../jsonFormatData/home";
-import { homeCardData } from "../../jsonFormatData/home";
+import { homeTabData } from "../../jsonFormatData/homeData";
 import Footer from "./Footer";
 
 
@@ -82,15 +81,13 @@ const Home = () => {
 
       {/* Card data container */}
       <div className="home-card-container">
-        {homeCardData.map((item, id) => {
-          return (
-            <div className="home-card-data" key={id}>
-              <img src={item.image} alt="logo" />
-              <h6>{item.title}</h6>
-              <p>{item.description}</p>
-            </div>
-          );
-        })}
+        {getCurrentTabData().cards.map((item, id) => (
+          <div className="home-card-data" key={id}>
+            <img src={item.img} alt="dummy" height={100} width={100} />
+            <h6>{item.title}</h6>
+            <p>{item.description}</p>
+          </div>
+        ))}
       </div>
 
       <Footer />

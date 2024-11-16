@@ -6,8 +6,6 @@ import { BsFillSendFill } from "react-icons/bs";
 
 
 const Contact = () => {
-
-
   return (
     <div>
       <div className="about-card-show">
@@ -53,12 +51,13 @@ const Contact = () => {
           <div className="enquiry-form">
             <h3>Let's Get Connected</h3>
 
-            <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Your Email" />
-            <input type="text" placeholder="Your Phone" />
-            <input type="text" placeholder="Your Subject" />
-
-            <textarea placeholder="Your Message" />
+            <input type="text" placeholder="Your Name" className='input-text-field' />
+            <input type="text" placeholder="Your Email" className='input-text-field' />
+            <input type="text" placeholder="Your Phone" className='input-text-field' />
+            <input type="text" placeholder="Your Subject" className='input-text-field' />
+            <div className='input-text-your-message' >
+              <textarea placeholder="Your Message" />
+            </div>
             <button> <BsFillSendFill /> Send Message</button>
           </div>
         </div>

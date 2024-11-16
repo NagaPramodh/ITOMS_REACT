@@ -77,37 +77,33 @@
 .home-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5vw;
   padding: 20px;
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
-  /* max-width: 1200px; */
   margin: 20px auto;
   text-align: center;
+  /* max-width: 1200px; */
 }
 
 .home-card-data {
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
+  position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 20px;
   flex: 1 1 150px;
   background-color: #f5f9ff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 20px;
-}
-
-.home-card-data img {
-  position: relative;
-  bottom: 65px;
 }
 
 .home-card-data h6 {
   font-size: 1.25rem;
   font-weight: 600;
   color: #333;
+  margin-top: 80px;
   margin-bottom: 10px;
   color: #0056b3;
 }
