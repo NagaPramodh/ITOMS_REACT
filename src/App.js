@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/contentComponents/Header";
-import Home from "./components/contentComponents/Home";
-import Contact from "./components/contentComponents/Contact";
+import Header from "./components/LandingScreens/Header";
+import Home from "./components/LandingScreens/Home";
+import Contact from "./components/LandingScreens/Contact";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Login from "./components/contentComponents/Login";
-// import Dashboard from "./components/contentComponents/adminComponents/Dashboard";
+import Login from "./components/LandingScreens/Login";
+// import Dashboard from "./components/LandingScreens/adminComponents/Dashboard";
 
 const App = () => {
   return (
